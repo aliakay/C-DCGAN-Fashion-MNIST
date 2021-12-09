@@ -187,6 +187,8 @@ You can train with different hyperparameters to the model.
 $ python3 train.py --batch_size 128 --num_epochs 50 --lr 0.0002 --nz 100 --ngf 32 --ndf 32 --nc 1 
 ```
 
+In the end of training process,It is going to save two model and I used Generator_model.pth for other functions because of the results.
+
 After finish the training process check the losses and Real-Fake images on tensorboard
 
 ```python
