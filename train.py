@@ -2,7 +2,6 @@
 from Model import weights_init,Generator,Discriminator
 from generate_test import create_noise_label,Generate_samples
 from dataloader import load_data,load_real_images,scale_images,interpolate
-from early_stopping import EarlyStopping
 from Frechet_distance import InceptionV3,calculate_activation_statistics,calculate_frechet_distance,calculate_fretchet
 
 import os
