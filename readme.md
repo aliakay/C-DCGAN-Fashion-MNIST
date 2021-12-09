@@ -82,6 +82,11 @@ Here is the result of training.
 
 ```python
 $ python3 -m tensorboard.main --logdir=logs
+
+#If you run the code in colab 
+%load_ext tensorboard
+%tensorboard --logdir=logs
+
 ```
 The standard GAN loss isn't useful in assessing whether training has converged or finished so I added Frechet Inception Distance and save the generator model based on it. Also every training I check generated images progress. 
 
