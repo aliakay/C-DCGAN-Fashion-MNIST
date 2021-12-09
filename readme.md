@@ -63,7 +63,7 @@ python3 -m pip install torch==1.10.0+cu113 -f https://download.pytorch.org/whl/c
 
 First of all, I don't have GPU in my local computer so I used colab in order to train the networks.Then I I downloaded tensorboard logs and trained generator network and added to the folder to use in my local in order to create other functions.
 
-You can check also my colab notebook.
+You can check also my colab notebook,there you can see my training process and testing process more clearly.
 
 [[Colab link]](https://colab.research.google.com/drive/1p-6nYoKUkfTGB2-PboHPPhQyuP5Ujlps?usp=sharing)
 
