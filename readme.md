@@ -113,8 +113,7 @@ $ python3 app.py
 + Ankle boot
 
 3) Open a new terminal and run the code
-Example for dress
-
++ Example for Sneaker
 ```python
 $ curl -X GET "http://localhost:5000/?generate_sample=Sneaker"
 ```
