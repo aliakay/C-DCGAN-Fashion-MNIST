@@ -13,7 +13,7 @@ parser = reqparse.RequestParser()
 parser.add_argument('generate_sample')
 
 print("-----Welcome to Fashion Mnist data Generetor comment line-------- ")
-print("Please open a new terminal and write the comment below there in order to generate sample images")
+print("Please open a new terminal,choose the category and write the example code in order to generate sample images")
 print("-----CATEGORY-----> 'T-shirt/top','Trouser','Pullover','Dress','Coat','Sandal','Shirt','Sneaker','Bag','Ankle boot'")
 print('EXAMPLE ---> curl -X GET "http://localhost:5000/?generate_sample=Sneaker" ' )
 
