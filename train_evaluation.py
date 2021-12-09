@@ -51,8 +51,8 @@ def train_evaluation(img_size,fixed_noise,fixed_label):
     plt.imshow(fake.permute(1, 2, 0)*0.5+0.5)
 
     # Save the comparation result
-    plt.savefig('Assets/train_result.jpg', bbox_inches='tight')
-    print("Real-Fake Images comparison picture saved as train_result.jpg")
+    plt.savefig('Assets/train_result_response.jpg', bbox_inches='tight')
+    print("Real-Fake Images comparison picture saved as train_result_response.jpg")
     return 
 
 train_evaluation(img_size,fixed_noise,fixed_label)
