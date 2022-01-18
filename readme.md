@@ -1,10 +1,3 @@
-# Sensity ML Engineer Intern Position Assignment
-
-Ali Akay
-MSc. Student at University of Trento
-
-In this assignment I trained Conditional DCGAN model for Fashion MNIST dataset.
-
 ## Conditional Generative Adversarial Nets
 
 #### Authors
@@ -143,13 +136,6 @@ Finally, it needs to output probabilities. I use a Sigmoid Activation for that.
 I use Conv2d + stride for downsampling.
 
 Both the generator and discriminator are trained on Binary Cross Entropy Loss and Adam optimizer with same learning rates are used.
-
-### Question: how easy/hard is this task for the Discriminator? 
-
-First of all,using the loss values directly is not show us the model is easy or hard.Over time both the Discriminator and Generator losses should settle to a value, however it's somewhat difficult to tell whether they've converged on strong performance or whether they've converged due to something like mode collapse/diminishing gradients. So that it is also depends on Generator capability,if our Generator can able to generate good fake images, this could be make discriminator work hard.
-I try to make stable and balance the network performance.In my model, It seems to discriminator outperform Generator.I could also use different Learning Rates in Generator and Discriminator.It could give some different results.
-Secondly,I didn't add dropout in discriminator network for my first model but discriminator was overpowering the generator (D_loss was under 0.20 while G_loss over 3). so I decided to add dropout in order to reduce overfitting problem for this version of training but still discriminator loss was decreasing while generator was increasing.So I also added label smoothing and for the last model, I got more stable learning based on the loss.
-
 
 ### Evaluation and Loss
 
